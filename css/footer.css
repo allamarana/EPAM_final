@@ -1,0 +1,84 @@
+footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    color:  rgba(184, 220, 245, 0.9);
+    background: rgba(0, 53, 88, 0.8);
+}
+.wsoc {
+    margin: 5%;
+    display: inline-block;
+}
+.socnetw{
+    margin-top:1em;
+    margin-left: 1em;
+    border: 1px solid rgba(78, 127, 136, 0.9);
+}
+.socnetw > span {
+    line-height: 35px;
+    vertical-align: center;
+    font-family: "FontAwesome5BrandsRegular", sans-serif;
+    font-size: 18px;
+    color:  rgba(184, 220, 245, 0.9);
+    letter-spacing: 0;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px;
+    line-height: 50px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color:  rgba(184, 220, 245, 0.9);
+    align-items: flex-start;
+    margin: 0.5em;
+    flex-flow: row nowrap;
+    cursor: pointer;
+}
+ .socnetw a{
+     text-decoration: none;
+     color:  rgba(184, 220, 245, 0.9);
+ }
+ .fm {
+     width: 40em;
+     margin: 0 auto;
+ }
+ .form-text{
+    font-size: 40px;
+    margin: 5% 0 1% 0;
+    padding: 30px 0 41px 0;
+    /* background-color: rgba(144, 190, 214, 0.8); */
+    border: 1px solid  rgba(184, 220, 245, 0.9)
+}
+form{
+    text-align: center;
+    display: inline-block;
+    /* margin-right: 50%; */
+}
+.email{
+    height: 50px;
+    width: 435px;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    color:  rgba(184, 220, 245, 0.9);
+    border-radius: 10px 0px 0px 10px;
+    font-family: "HelveticaNeue-Thin", Helvetica, sans-serif;
+    padding-left: 20px; 
+    border: 1px solid  rgba(184, 220, 245, 0.9);
+
+}
+.signup{
+    height: 2.6em;
+    width: 5em;
+    background-color: rgba(123, 145, 160, 0.6);
+    border: 1px solid  rgba(184, 220, 245, 0.9);
+    color: rgba(184, 220, 245, 0.9);
+    font-size: 20px;
+    border-radius: 0px 10px 10px 0px;
+    /* border: none; */
+    vertical-align: top;
+}
+.email-field {
+    width: 40em;
+}
