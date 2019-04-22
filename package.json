@@ -4,8 +4,26 @@
   "description": "'epam final project'",
   "main": "index.js",
   "scripts": {
+    "dev" : "webpack-dev-server --inline --hot",
+    "webpack": "webpack --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allamarana/EPAM_final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allamarana/EPAM_final/issues"
+  },
+  "homepage": "https://github.com/allamarana/EPAM_final#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  }
 }
