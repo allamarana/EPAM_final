@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "city": "London",
+      "knowledge": {
+          "specialization": "frontend",
+          "knowledge":["html", "css", "react" ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "email": "Shanna@melissa.tv",
+      "city": "Berlin",
+      "knowledge": {
+          "specialization": "fullstack",
+          "knowledge":["html", "css", "react","node js", "webpack" ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "email": "Nathan@yesenia.net",
+      "city": "Kyiv",
+      "knowledge": {
+          "specialization": "frontend",
+          "knowledge":["html", "css", "angular","webpack" ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "email": "Julianne.OConner@kory.org",
+      "city": "London",
+      "knowledge": {
+          "specialization": "frontend",
+          "knowledge":["html", "css", "react","wordpress", "gulp", "scss" ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "email": "Lucio_Hettinger@annie.ca",
+      "city": "Chickago",
+      "knowledge": {
+          "specialization": "backend",
+          "knowledge":["node js", "python", "mongodb" ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "email": "Karley_Dach@jasper.info",
+      "city": "London",
+      "knowledge": {
+          "specialization": "frontend",
+          "knowledge":["html", "css", "react" ]
+      }
+    }
+  ]

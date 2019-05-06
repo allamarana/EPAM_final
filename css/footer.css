@@ -1,5 +1,6 @@
 footer {
-    height: auto;
+    height: 25%;
+    /* margin-top: -25%; */
     width: 100%;
     display: flex;
     color:  rgba(184, 220, 245, 0.9);
