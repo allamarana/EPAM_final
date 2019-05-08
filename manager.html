@@ -9,24 +9,65 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+            <div class="serch">
+                    <div class="layer">
+                        <form class = "find">
+                            <input type="text" class="job search-field" placeholder="Job Title, Skills, Keywords" id="search-job" name="q" autocomplete="off">
+                            
 
+                            <input type="text" class="city search-field" placeholder="City" id="search-city" name="q" autocomplete="off">
+                            
+                            <button class="butt search-button"> 
+                                    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+                                            
+                            </button>
+                        </form>
+                    </div>
+        
+            </div>
+            <div class="container">
+                        <nav class="menu">
+                            <div class="first-menu prog">
+                                <a href="index.html">
+                                    <h2>
+                                        Main menu
+                                    </h2> 
+                                </a>
+                            </div>
+                            <div class="first-menu prog">
+                                <h2>For Programmers</h2>
+                                <ul>
+                                    <li>Add knowledge</li>
+                                    <li>Estimate knowledge</li>
+                                    <li></li>
+                                </ul>
+                                    
+                            </div>
+                            <div class="first-menu mang">
+                                <h2>
+                                    For Manager
+                                </h2> 
+                                <ul>
+                                    <li>
+                                        <a href="manager.html">
+                                            Search
+                                        </a>   
+                                    </li>
+                                    <li>Create report</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="first-menu cont">
+                                <h1>
+                                    Contact us 
+                                </h1>
+                            </div>
+                        </nav>
+            </div>  
+    </header>
     <main>
-        <div class="serch">
-            <form action="get" class = "find">
-                <input type="text" class="job search-field" placeholder="Job Title, Skills, Keywords" id="search-job" name="q" autocomplete="off">
-        
-                <button class="but"> 
-                        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-                    
-                </button>
-                <input type="text" class="city search-field" placeholder="City" id="search-city" name="q" autocomplete="off">
-        
-                <button class="but">
-                        
-                </button>
-            </form>
-        </div>
-                    
+   
         <div id="results" class = "result">
         </div>
     </main>

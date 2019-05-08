@@ -85,11 +85,11 @@ label{
 .container {
     display: block;
     position: absolute;
-    background: rgba(0, 53, 88, 0.85);
+    background: rgba(0, 0, 0, 0.6);
     height: 5em;
-    width: 60%;
+    width: 68%;
     top: 0;
-    left: 20%;
+    left: 16%;
     color:  rgba(184, 220, 245, 0.9);
 }
 menu {
@@ -102,24 +102,22 @@ menu {
 }
 .first-menu {
     display: inline-block;
-    width: 30%;
-    margin: 1%;
-    /* border-left: 1px solid rgba(184, 220, 245, 0.6);
-    border-right: 1px solid rgba(184, 220, 245, 0.6); */
+    width: 23%;
+    margin-left: 1%;
     text-align: center;
     cursor: pointer;
 }
 .prog {
-    margin-left: 2%;
+    /* margin-left: 2%; */
 }
 .first-menu ul {
     position: absolute;
     list-style-type: none;
-    background: rgba(0, 53, 88, 0.85);
+    background: rgba(0, 0, 0, 0.7);
     display: none;
     padding: 1%;
 
-    width: 34%;
+    width:23%;
     margin: 0;
 }
 .first-menu li {
@@ -132,16 +130,46 @@ menu {
     
 }
 .prog ul { 
-    left: 0;
+    left: 25%;
+    top: 100%;
 }
 .prog:hover ul{
     display: inline-block;
     cursor: pointer;
 }
 .mang ul { 
-    left: 22em;
+    left: 50%;
+    top: 100%;
 }
 .mang:hover ul{
     display: inline-block;
     cursor: pointer;
+}
+
+/* manager search form*/
+
+.serch {
+    background-image: url(images/coworking.jpg);
+    height: 45em;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+
+}
+.layer {
+    width: 100%;
+    height: 45em;
+    background: rgba(30, 60, 80, 0.5);
+    position: absolute;
+}
+.serch form {
+    height: 70%;
+    width: 70%;
+    margin: 30% auto;
+    display: block;
+
+}
+.search-field {
+    height: 10%;
+    width: 45%;
 }

@@ -11,25 +11,40 @@ function getUsers() {
     return JSON.parse(localStorage.getItem('users'));
 }
 
-// function getCritiria (){
-//     var input = {};
-//     // input.city = 
-// }
+// getting input onclick
+window.onload = function() {
+
+    document.querySelector(".search-button").addEventListener("click", getCritiria);
+}
+
+
+function getCritiria (){
+    var critiria = {};
+    critiria.city = document.querySelector('.city').value;
+    critiria.job = document.querySelector('.job').value;
+    alert(JSON.stringify(critiria));
+    return critiria;
+}
 
 function searchUsers(critiria) {
- 
 
     const users = getUsers();
     return users
         .filter(user => {
+            if (critiria.city === ""){
+                return true;
+            } 
             if (critiria.city) {
                 return user.city === critiria.city;
             }
             return true;
         })
         .filter(user => {
-            if (critiria.knowledge) {
-                return user.knowledge.knowledge.includes(critiria.knowledge);
+            if (critiria.job === ""){
+                return true;
+            } 
+            if (critiria.job) {
+                return user.job.includes(critiria.job);
             }
             return true;
         });
