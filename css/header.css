@@ -1,6 +1,8 @@
 .all {
     position: relative;
 }
+
+/* slider style */
 .slider{
     position: relative;
     text-align: center;
@@ -82,20 +84,25 @@ label{
     width: 100%;
     top: 50%;
 }
+
+/* menu style */
+header h2 {
+    color:  rgba(194, 197, 199, 0.9);
+}
 .container {
-    display: block;
+
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
     height: 5em;
     width: 68%;
     top: 0;
     left: 16%;
-    color:  rgba(184, 220, 245, 0.9);
+    color:  rgba(194, 197, 199, 0.9);
 }
 menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
     width: 100%;
     
@@ -107,9 +114,7 @@ menu {
     text-align: center;
     cursor: pointer;
 }
-.prog {
-    /* margin-left: 2%; */
-}
+
 .first-menu ul {
     position: absolute;
     list-style-type: none;
@@ -163,7 +168,7 @@ menu {
     position: absolute;
 }
 .serch form {
-    height: 70%;
+    height: 200px;
     width: 70%;
     margin: 30% auto;
     display: block;
@@ -172,4 +177,11 @@ menu {
 .search-field {
     height: 10%;
     width: 45%;
+}
+
+/* contacts styles */
+
+.contact-header {
+    height: 100px;
+    background:rgba(202, 202, 202, 0.705);
 }

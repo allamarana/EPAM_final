@@ -1,0 +1,1 @@
+https://github.com/webpack-contrib/css-loader/issues/447

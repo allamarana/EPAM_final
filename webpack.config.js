@@ -9,6 +9,9 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/build/',
     },
+    node: {
+        fs: 'empty'
+    },
     watch: true,
     module: {
         rules: [
