@@ -8,12 +8,21 @@
     <script src="build/bundle.js"></script>
     <title>Document</title>
     
-    <script id="person-short-view" type="text/x-handlebars-template">
+    <script id="template-person-short-view" type="text/x-handlebars-template">
         {{#each users}}
-        <div class="entry">
-            <h2>{{name}}</h2>
-            <div class="city">{{city}}</div>
-            <div class="job">{{job}}</div>
+        <div class="entry person-short-view">
+            <div class="profile-picture">
+                <img src="{{picture}}">
+            </div>
+            <div class="description">
+                <h2>{{name}}</h2>
+                <div class="city">{{city}}</div>
+                <div class="skills">
+                    {{#each skills}}
+                        <span class="skill shadow">{{this}}</span>
+                    {{/each}}
+                </div>
+            </div>
         </div>
         {{/each}}
     </script>
@@ -22,21 +31,18 @@
 <body>
     <div class='wrap-all-content'>
         <header>
-            <div class="serch">
-                <div class="height-manager-form layer">
-                    <form class="find">
-                        <input type="text" class="job search-field" placeholder="Job Title, Skills, Keywords" id="search-job" name="job" autocomplete="off">
-                        
-                        
-                        <input type="text" class="city search-field" placeholder="City" id="search-city" name="city" autocomplete="off">
-                        
-                        <button class="butt search-button"> 
-                            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-                            Find
-                        </button>
-                    </form>
-                </div>
-                
+            <div class="manager-search">
+                <form class="manager-find">
+                    <input type="text" class="query search-field" placeholder="Job Title, Skills, Keywords" id="search-query" name="query" autocomplete="off">
+                    
+                    
+                    <input type="text" class="city search-field" placeholder="City" id="search-city" name="city" autocomplete="off">
+                    
+                    <button class="manager-search-button shadow search-button"> 
+                        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+                        Find
+                    </button>
+                </form>
             </div>
             <div class="container">
                 <nav class="menu">
@@ -91,7 +97,7 @@
         </header>
         <main>
             
-            <div id="results" class="result">
+            <div id="results" class="result search-results">
             </div>
         </main>
         

@@ -2,11 +2,6 @@ import { init } from './init';
 import * as manager from './manager';
 import * as programmerCreate from './programmer-create'
 
-function notFound() {
-    // ...
-    alert('page is not found');
-}
-
 function main() {
     init();
     switch (document.location.pathname) {
@@ -14,10 +9,10 @@ function main() {
             manager.run();
             break;
         case '/programmer-create.html':
-            programmerCreate.pushData();
+            programmerCreate.run();
             break;
         default:
-            notFound();
+            // notFound();
     }
 }
 

@@ -36,9 +36,9 @@ footer {
     flex-flow: row nowrap;
     cursor: pointer;
 }
- .socnetw a{
+ .socnetw a {
      text-decoration: none;
-     color:  rgba(194, 197, 199, 0.9);
+     color: rgba(194, 197, 199, 0.9);
  }
  .fm {
      width: 40em;

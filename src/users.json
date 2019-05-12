@@ -4,7 +4,9 @@
       "name": "Leanne Graham",
       "email": "Sincere@april.biz",
       "city": "London",
-      "job": ["html", "css", "react" ]
+      "skills": ["html", "css", "react" ],
+      "picture": "/assets/images/man-1.jpeg",
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
     },
 
     {
@@ -12,29 +14,34 @@
       "name": "Ervin Howell",
       "email": "Shanna@melissa.tv",
       "city": "Berlin",
-      "job":["html", "css", "react","node js", "webpack" ]
+      "skills":["html", "css", "react","node js", "webpack" ],
+      "picture": "/assets/images/man-2.jpg",
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
     },
     {
       "id": 3,
       "name": "Clementine Bauch",
       "email": "Nathan@yesenia.net",
       "city": "Kyiv",
-      "job": ["html", "css", "angular","webpack" ]
+      "skills": ["html", "css", "angular","webpack" ],
+      "picture": "/assets/images/man-3.jpg",
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
     },
     {
       "id": 4,
       "name": "Patricia Lebsack",
       "email": "Julianne.OConner@kory.org",
       "city": "London",
-      "job": ["html", "css", "react","wordpress", "gulp", "scss" ]
-      
+      "skills": ["html", "css", "react","wordpress", "gulp", "scss" ],
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
     },
     {
       "id": 5,
       "name": "Chelsey Dietrich",
       "email": "Lucio_Hettinger@annie.ca",
       "city": "Chickago",
-      "job": ["node js", "python", "mongodb" ]
+      "skills": ["node js", "python", "mongodb" ],
+      "bio": "Work experience: 5 years. Studies at MIT"
     },
 
     {
@@ -42,6 +49,7 @@
       "name": "Mrs. Dennis Schulist",
       "email": "Karley_Dach@jasper.info",
       "city": "London",
-      "job":["html", "css", "react" ]
+      "skills":["html", "css", "react" ],
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
     }
   ]

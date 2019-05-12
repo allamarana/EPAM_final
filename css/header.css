@@ -36,7 +36,7 @@
 .switch3:checked ~ .controls label:nth-child(2),
 .switch4:checked ~ .controls label:nth-child(3),
 .switch5:checked ~ .controls label:nth-child(4){
-    background: url('images/prev.png') no-repeat;
+    background: url('/assets/images/prev.png') no-repeat;
     float: left;
 	display: block;
 	height: 68px;
@@ -48,7 +48,7 @@
 .switch3:checked ~ .controls label:nth-child(4),
 .switch4:checked ~ .controls label:nth-child(5),
 .switch5:checked ~ .controls label:nth-child(1){
-    background: url('images/next.png') no-repeat;
+    background: url('/assets/images/next.png') no-repeat;
     float: right;
 	display: block;
 	height: 68px;
@@ -156,16 +156,29 @@ menu {
 }
 
 /* manager search form*/
-
-.serch {
-    background-image: url('images/coworking.jpg');
+.manager-search {
+    background-image: url('/assets/images/coworking-bg.jpg');
     height: 45em;
     width: 100%;
     position: relative;
-    object-fit: cover;
-
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.height-manager-form{
+
+/* .manager-search:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6; 
+} */
+
+.height-manager-form {
     height: 45em;
 }
 .layer {
@@ -173,16 +186,27 @@ menu {
     background: rgba(15, 19, 22, 0.6);
     position: absolute;
 }
-.serch form {
-    height: 200px;
+.manager-search form {
+    margin: auto;
     width: 70%;
-    margin: 30% auto;
-    display: block;
-
+    /* height: 200px; */
+    /* width: 70%; */
+    /* margin: 30% auto; */
 }
 .search-field {
-    height: 10%;
-    width: 45%;
+    color: #333;
+    outline: none;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 50px;
+    width: 35%;
+}
+
+.search-field::placeholder {
+    color: #999;
+    opacity: 0.8;
 }
 
 /* contacts styles */
