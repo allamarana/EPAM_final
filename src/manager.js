@@ -3,7 +3,7 @@ import users from './users.json';
 import * as Handlebars from 'handlebars';
 
 // function to get parameters from url
-function getParameterByName(name) {
+export function getParameterByName(name) {
     const url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),

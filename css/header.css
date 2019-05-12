@@ -93,7 +93,7 @@ header h2 {
 
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
-    height: 5em;
+    height: 4em;
     width: 68%;
     top: 0;
     left: 16%;
@@ -150,21 +150,27 @@ menu {
     display: inline-block;
     cursor: pointer;
 }
+.ul-seen:hover li{
+    display: inline-block;
+    cursor: pointer;
+}
 
 /* manager search form*/
 
 .serch {
-    background-image: url(images/coworking.jpg);
+    background-image: url('images/coworking.jpg');
     height: 45em;
     width: 100%;
     position: relative;
     object-fit: cover;
 
 }
+.height-manager-form{
+    height: 45em;
+}
 .layer {
     width: 100%;
-    height: 45em;
-    background: rgba(30, 60, 80, 0.5);
+    background: rgba(15, 19, 22, 0.6);
     position: absolute;
 }
 .serch form {
@@ -184,4 +190,10 @@ menu {
 .contact-header {
     height: 100px;
     background:rgba(202, 202, 202, 0.705);
+}
+
+/* programmer create styles */
+
+.programmer-header .container {
+    background: rgba(0, 0, 0, 0.7);
 }
