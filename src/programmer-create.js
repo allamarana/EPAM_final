@@ -20,6 +20,8 @@ export function run() {
     document.querySelector('.programmer-create-form').addEventListener('submit', function(e) {
         const data = getData();
         addUser(data);
+        alert('Профиль успешно сохранен.')
+        e.target.reset();
         e.preventDefault();
     });
 }

@@ -86,10 +86,22 @@ label{
 }
 
 /* menu style */
-header h2 {
-    color:  rgba(194, 197, 199, 0.9);
+header {
+    z-index: 1;
+    background: #333;
 }
+
 .container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+/* .container {
 
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
@@ -98,14 +110,25 @@ header h2 {
     top: 0;
     left: 16%;
     color:  rgba(194, 197, 199, 0.9);
+} */
+
+.menu a, .menu .menu-item  {
+    color: #83d0f2;
 }
-menu {
+.menu a:hover, .menu .menu-item:hover {
+    color: #83d0f2;
+}
+
+.menu {
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
     width: 100%;
-    
 }
 .first-menu {
     display: inline-block;

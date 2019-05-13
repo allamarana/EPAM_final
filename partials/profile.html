@@ -1,0 +1,27 @@
+<script id="template-profile" type="text/x-handlebars-template">
+    <div class="profile__person-picture">
+        <img src="{{user.picture}}">
+    </div>
+    <h1>{{user.name}}</h1>
+    <table class="profile__table">
+        <tr>
+            <td>Email</td>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr>
+            <td>Город</td>
+            <td>{{user.city}}</td>
+        </tr>
+        <tr>
+            <td>Навыки</td>
+            <td>{{user.skills}}</td>
+        </tr>
+        <tr>
+            <td>О себе</td>
+            <td>{{user.bio}}</td>
+        </tr>
+    </table>
+</script>
+
+
+<div id="profile" class="shadow"></div>

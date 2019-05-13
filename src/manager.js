@@ -1,17 +1,8 @@
+import { getParameterByName } from './common';
 import seeds from './users.json';
 // add template library Handlebars 
 import * as Handlebars from 'handlebars';
 
-// function to get parameters from url
-export function getParameterByName(name) {
-    const url = window.location.href;
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
 
 function getUsers() {
     return JSON.parse(localStorage.getItem('users'));
@@ -76,7 +67,11 @@ export function run() {
 
     document.querySelector('.search-results').addEventListener('click', function(event) {
         if (event.target.classList.contains('skill')) {
-            window.location = '/manager.html?query=' + encodeURIComponent(event.target.innerText);
+            window.location = '/index.html?query=' + encodeURIComponent(event.target.innerText) + '#manager';
         }
+        let current = event.target;
+        while(!current.dataset.id) current = current.parentNode;
+
+        window.location = '/index.html?id=' + current.dataset.id + '#profile';
     });
 }

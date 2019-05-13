@@ -1,0 +1,35 @@
+<script id="template-person-short-view" type="text/x-handlebars-template">
+    {{#each users}}
+    <div class="entry person-short-view" data-id="{{id}}">
+        <div class="profile-picture">
+            <img src="{{picture}}">
+        </div>
+        <div class="description">
+            <h2>{{name}}</h2>
+            <div class="city">{{city}}</div>
+            <div class="skills">
+                {{#each skills}}
+                    <span class="skill shadow">{{this}}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<div class="manager-search">
+    <form class="manager-find">
+        <input type="text" class="query search-field" placeholder="Должность, навыки, ключевые слова" id="search-query" name="query" autocomplete="off">
+        
+        
+        <input type="text" class="city search-field" placeholder="Город" id="search-city" name="city" autocomplete="off">
+        
+        <button class="manager-search-button shadow search-button"> 
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            Искать
+        </button>
+    </form>
+</div>
+
+<div id="results" class="result search-results">
+</div>
