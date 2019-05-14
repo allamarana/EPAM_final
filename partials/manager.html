@@ -9,7 +9,7 @@
             <div class="city">{{city}}</div>
             <div class="skills">
                 {{#each skills}}
-                    <span class="skill shadow">{{this}}</span>
+                <span class="skill shadow">{{this}}</span>
                 {{/each}}
             </div>
         </div>
@@ -25,16 +25,27 @@
         <input type="text" class="city search-field" placeholder="Город" id="search-city" name="city" autocomplete="off">
         
         <button class="manager-search-button shadow search-button"> 
-            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
             Искать
         </button>
     </form>
 </div>
+<form id="manager-sort-data">
+</form>
+<p class="sorting">
+    <select name="num" form="manager-sort-data">
+        <option disabled checked> Сортировать по: </option>
+        <option value="alphabetASC">Алфавиту: с начала</option>
+        <option value="alphabetDESC">Алфавиту: с конца</option>
+    </select>
+    <input type="submit" form="manager-sort-data" class="manager-sort-data-button" value="Сортировать">
+</p>    
 
 <div id="results" class="result search-results">
 </div>
-<div class="content-pagination" actpage="1">
-    <button class="cp p1 cp-style">1</button>
-    <button class="cp cp2 cp-style">2</button>
-    <button class="cp cp3 cp-style">3</button>
+
+<div class="content-pagination pages" >
+    
+    <button class="pagination previous">Previous</button>
+    <button class="pagination next">Next</button>
+    
 </div>

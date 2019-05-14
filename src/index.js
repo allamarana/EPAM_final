@@ -6,11 +6,16 @@ import * as programmerCreate from './programmer-create';
 import * as profile from './profile';
 import * as programmerChange from './programmer-change';
 import * as programmerProfile from './programmer-profile';
-
+import * as managerReport from './mananger-report';
+import * as managerChange from './manager-report-change'
+import * as report from './report'
 
 function controller(page) {
     switch (page) {
         case 'manager': return manager.run();
+        case 'manager-report': return managerReport.run();
+        case 'manager-report-change': return managerChange.run();
+        case 'report': return report.run();
         case 'programmer-create': return programmerCreate.run();
         case 'profile': return profile.run();
         case 'programmer-change': return programmerChange.run();
@@ -30,11 +35,13 @@ async function render(page) {
         'index',
         'manager',
         'manager-report',
+        'manager-report-change',
         'programmer-create',
         'programmer-change',
         'programmer-profile',
         'contacts',
         'profile',
+        'report'
 
     ];
     if (!pages.includes(page)) page = '404';

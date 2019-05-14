@@ -51,7 +51,7 @@ a:active {
     flex-direction: column;
 }
 main {
-    background:rgba(202, 202, 202, 0.705);
+    background:#eee;
     color: rgba(62, 62, 63, 0.856);
 }
 
@@ -292,7 +292,7 @@ main .result {
     .person-short-view {
         width: 90%;
     }
-
+    
     .search-field {
         width: 100%;
         display: block;
@@ -403,18 +403,19 @@ main .result {
     font-size: 20px;
     padding: 1%;
     
-
+    
 }
 
 /* programmer-change styles */
 .place-form {
     display: flex;
+    /* height: 200px; */
     flex-direction: column;
     justify-content: center;
 }
 .insert-password {
     margin: auto;
-    height: 100px;
+    height: 200px;
     width: 70%;
     background: rgba(0, 0, 0, 0.5);
 }
@@ -422,17 +423,17 @@ main .result {
     margin: auto;
     width: 100%;
     color: rgba(194, 197, 199, 0.9);
-
+    
 }
-.insert-password-form input, p { 
+.insert-password-form input { 
     display: inline-block;
     font-size: 18px;
     height: 50px;
 }
 /* .insert-password-form p{
-     padding: 10px;
+    padding: 10px;
 } */ 
-.user-password {
+.user-password, .user-email {
     width: 50%;
 }
 .password-button-size{
@@ -465,4 +466,88 @@ main .result {
 .profile-change-form textarea {
     width: 100%;
     height: 100px;
+}
+
+/* pagination styles */
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 40%;
+    margin: 0 auto;
+    background: #eee;
+}
+.pagination {
+    background:  #969494;
+    color: black;
+    /* width: 20%; */
+    font-size: 18px;
+    padding:5px;
+    outline: none;
+}
+.pagination:hover{
+    background: rgb(187, 185, 185);
+    color: black;
+}
+
+.sorting{
+    display: block;
+    margin: 0 auto;
+    width:20%;
+}
+
+/* manager report styles */
+
+.manager-report-form-size {
+    height: 60em;
+}
+.manager-report {
+    background: rgba(28, 28, 29, 0.6)
+}
+.manager-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 750px;
+    margin: auto;
+    width: 90%;
+    
+}
+
+.report-data-input {
+    width: 65%;
+    height: 700px;
+}
+.report-data-input input {
+    height: 33px;
+}
+.manager-report-save {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 30%;
+    padding-bottom:10px;
+    margin-bottom: 5%;
+    font-size: 20px;
+
+}
+.report-data-p  {
+    width: 35%;
+    height: 700px;
+    font-size: 18px;
+    line-height: 1;
+}
+}
+
+/* manager change */
+
+.manager-insert-password {
+    background: rgba(26, 25, 25, 0.5);
+    width: 60%;
+
+}
+.manager-insert-password input, button {
+    margin: auto;
 }

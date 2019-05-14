@@ -6,7 +6,8 @@
       "city": "London",
       "skills": ["html", "css", "react" ],
       "picture": "/assets/images/man-1.jpeg",
-      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications",
+      "password": "1"
     },
 
     {
@@ -16,7 +17,8 @@
       "city": "Berlin",
       "skills":["html", "css", "react","node js", "webpack" ],
       "picture": "/assets/images/man-2.jpg",
-      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications",
+      "password": "1"
     },
     {
       "id": "ffc30ab3-b345-49f6-842b-35ba45753eac",
@@ -25,7 +27,8 @@
       "city": "Kyiv",
       "skills": ["html", "css", "angular","webpack" ],
       "picture": "/assets/images/man-3.jpg",
-      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications",
+      "password": "2"
     },
     {
       "id": "ffc30ab3-b345-49f6-842b-35ba45753ea0",
@@ -33,7 +36,8 @@
       "email": "Julianne.OConner@kory.org",
       "city": "London",
       "skills": ["html", "css", "react","wordpress", "gulp", "scss" ],
-      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications",
+      "password": "3"
     },
     {
       "id": "ffc30ab3-b345-49f6-842b-35ba45753ea1",
@@ -41,7 +45,8 @@
       "email": "Lucio_Hettinger@annie.ca",
       "city": "Chickago",
       "skills": ["node js", "python", "mongodb" ],
-      "bio": "Work experience: 5 years. Studies at MIT"
+      "bio": "Work experience: 5 years. Studies at MIT",
+      "password": "4"
     },
 
     {
@@ -50,6 +55,7 @@
       "email": "Karley_Dach@jasper.info",
       "city": "London",
       "skills":["html", "css", "react" ],
-      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications"
+      "bio": "Work experience: 2 years. Studies at Oxford. Have huge experience with one-page applications",
+      "password": "5"
     }
   ]

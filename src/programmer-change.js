@@ -1,22 +1,24 @@
 import * as common from './common';
 
-function getUserPassword() {
-    var password = common.getFormData('.insert-password-form')
-
-    return password['my-password'];
+function getRegistrationData() {
+    return common.getFormData('.insert-password-form');
 }
 
-function findUser(password) {
+function findUser(registrationData) {
     const users = JSON.parse(localStorage.getItem('users'));
-    const user =  users.find(user => user.password === password);
+    const user =  users.find(user => user.password === registrationData.password && user.email.toLowerCase() === registrationData.email.toLowerCase() );
 
     return user;
 }
 
 export function run() {
     document.querySelector('.insert-password-form').addEventListener('submit', function(e) { 
-        const user = findUser(getUserPassword());
-        window.location = '/index.html?id=' + user.id + '#programmer-profile';
         e.preventDefault();
+        const user = findUser(getRegistrationData());
+        if (!user) {
+            alert('Не найдено пользователя с заданными email и паролем');
+            return;
+        }
+        window.location = '/index.html?id=' + user.id + '#report';
     });
 }

@@ -1,0 +1,33 @@
+<script id="template-profile" type="text/x-handlebars-template">
+    <h1>{{report.name}}</h1>
+    <table class="profile__table">
+        <tr>
+            <td>Email</td>
+            <td>{{report.email}}</td>
+        </tr>
+        <tr>
+            <td>Город</td>
+            <td>{{report.city}}</td>
+        </tr>
+        <tr>
+            <td>Области поиска:</td>
+            <td>{{report.skills}}</td>
+        </tr>
+        <tr>
+            <td>Количество пользователей, найденных по запросу:</td>
+            <td>{{report.user-number}}</td>
+        </tr>
+        <tr>
+            <td>Количество отправленных откликов:</td>
+            <td>{{report.answer-number}}</td>
+        </tr>
+        <tr>
+            <td>Дополнительная информация</td>
+            <td>{{report.resume}}</td>
+        </tr>
+    </table>
+</script>
+
+
+
+<div id="report" class = "profile" class="shadow"></div>
