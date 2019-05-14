@@ -1,0 +1,31 @@
+<script id="template-profile-change" type="text/x-handlebars-template">
+    <div class="profile__person-picture">
+        <img src="{{user.picture}}">
+    </div>
+    <h1>{{user.name}}</h1>
+    <form class="profile-change-form">
+        <table class="profile-change__table">
+            <tr>
+                <td>Email</td>
+                <td><input name="email" value="{{user.email}}"></td>
+            </tr>
+            <tr>
+                <td>Город</td>
+                <td><input name="city" value="{{user.city}}"></td>
+            </tr>
+            <tr>
+                <td>Навыки</td>
+                <td><input name="skills" value="{{user.skills}}"></td>
+            </tr>
+            <tr>
+                <td>О себе</td>
+                <td><textarea name="bio">{{user.bio}}</textarea></td>
+            </tr>
+        </table>
+    </form>
+
+    <button class="profile-change__button">Обновить профиль</button>
+</script>
+
+
+<div id="profile-change" class="profile shadow"></div>

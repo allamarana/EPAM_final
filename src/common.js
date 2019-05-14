@@ -1,3 +1,4 @@
+
 export function getFormData(formSelector) {
     const values = [...document.querySelectorAll(`${formSelector} input`)]
         .map(input => [input.name, input.value]);

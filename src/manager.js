@@ -4,6 +4,17 @@ import seeds from './users.json';
 import * as Handlebars from 'handlebars';
 
 
+const PAGE_SIZE = 4;
+
+function getCurrentPage() {
+    const page = +getParameterByName('page') || 0;
+
+    return page;
+}
+// function createPageButton(size, pages){
+//    var buttons = Math.ceil(pages/size);
+    
+// }
 function getUsers() {
     return JSON.parse(localStorage.getItem('users'));
 }
@@ -34,7 +45,9 @@ function searchUsers(critiria) {
                 return true;
             } 
             if (critiria.query) {
-                return user.skills.includes(critiria.query);
+                const text = user.skills.join(' ').toLowerCase() + ' ' + user.bio.toLowerCase();
+
+                return text.includes(critiria.query);
             }
             return true;
         });
@@ -44,7 +57,6 @@ function searchUsers(critiria) {
 function render(data) {
     var source   = document.getElementById("template-person-short-view").innerHTML;
     var template = Handlebars.compile(source);
-    console.log(data);
     for (const user of data.users) {
         user.picture = user.picture || '/assets/images/default-programmer.png';
     }
@@ -61,13 +73,16 @@ export function run() {
     document.getElementById('search-query').value = critiria.query;
     document.getElementById('search-city').value = critiria.city;
 
-    const users = searchUsers(critiria);
+    const page = getCurrentPage();
+    const users = searchUsers(critiria).slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
+
     render({ users });
 
 
     document.querySelector('.search-results').addEventListener('click', function(event) {
         if (event.target.classList.contains('skill')) {
             window.location = '/index.html?query=' + encodeURIComponent(event.target.innerText) + '#manager';
+            return;
         }
         let current = event.target;
         while(!current.dataset.id) current = current.parentNode;
